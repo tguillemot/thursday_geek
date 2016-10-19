@@ -184,3 +184,35 @@ In that way, it's easier to solve the conflicts and on that way we can conserve
 all the successive modification.
 
 ### Issues and Pull Request on Linux
+
+### Git configuration
+You can define some personal git properties as alias for exemple. To do it,
+you have to create a file called ``~/.gitconfig``. We provide an example of
+that file :
+```
+[color]
+  branch = true
+  diff = true
+  interactive = true
+  ui = true
+  status = true
+
+[core]
+  editor = vim
+  preloadindex = true
+  autocrlf = false
+  whitespace = trailing-space,space-before-tab,indent-with-non-space
+
+[alias]
+  ci = commit
+  co = checkout
+  st = status
+  br = branch
+
+[user]
+  name = Thierry Guillemot
+  email = thierry.guillemot.work@gmail.com
+
+[push]
+  default = simple
+```
